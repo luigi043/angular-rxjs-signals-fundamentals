@@ -1,7 +1,7 @@
 import { Review } from "../reviews/review";
 
 /* Defines the product entity */
-export interface Product {
+export interface  Product {
   id: number;
   productName: string;
   productCode: string;
