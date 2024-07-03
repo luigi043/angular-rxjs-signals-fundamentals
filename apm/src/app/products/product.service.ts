@@ -20,7 +20,7 @@ export class ProductService {
 
   readonly products$ = this.http.get<Product[]>(this.productsUrl)
   .pipe(
-    tap(() => console.log('In http.get pipeline')), 
+    tap(p => console.log(JSON.stringify(p))), 
     catchError(err => this.handleError(err))
   );
 
