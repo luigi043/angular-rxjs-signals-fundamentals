@@ -13,7 +13,7 @@
       </div>
 
       <!-- Display the cart items -->
-      <div *ngFor="let item of cartItems">
+      <div *ngFor="let item of cartItems()"> 
         <sw-cart-item [cartItem]='item' />
       </div>
     </div>
