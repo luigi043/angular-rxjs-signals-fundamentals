@@ -1,7 +1,7 @@
 import { Review } from "../reviews/review";
 
 /* Defines the product entity */
-export interface  Product {
+export interface Product {
   id: number;
   productName: string;
   productCode: string;
@@ -10,4 +10,9 @@ export interface  Product {
   quantityInStock?: number;
   hasReviews?: boolean;
   reviews?: Review[];
+}
+
+export interface Result<T> {
+  data: T | undefined;
+  error?: string;
 }
